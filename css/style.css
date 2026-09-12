@@ -1,11 +1,11 @@
 body {
   font-family: Georgia, serif;
-  color: #262220;
+  color: #222222;
   background-color: #f8f5f0;
 }
 
 header {
-  background-color: #2f4a3d;
+  background-color: #3d2f4a;
   color: #ffffff;
   padding: 20px;
 }
@@ -20,12 +20,12 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
-  color: #2f4a3d;
+  color: #3d2f4a;
 }
 
 h3 {
   font-size: 1.25rem;
-  color: #2f4a3d;
+  color: #3d2f4a;
 }
 
 p {
@@ -68,9 +68,9 @@ footer {
   vertical-align: top;
 }
 
-.swatch-primary { background-color: #2f4a3d; }
-.swatch-neutral { background-color: #262220; }
-.swatch-accent { background-color: #c1652b; }
+.swatch-primary { background-color: #3d2f4a; }
+.swatch-neutral { background-color: #222222; }
+.swatch-accent { background-color: #2f4a45; }
 .swatch-cta { background-color: #a8541f; }
 
 .type-sample-h1 { font-size: 2.5rem; }
