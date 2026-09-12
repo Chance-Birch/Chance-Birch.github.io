@@ -11,7 +11,7 @@ header {
 }
 
 header nav a {
-  margin: 0 auto;
+  margin-right: 16px;
   color: #ffffff;
 }
 h1 {
