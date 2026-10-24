@@ -26,12 +26,38 @@
     <h2>What We Do</h2>
     <p>We print custom 3D models for a variety of projects. Whether you need a small replacement part, a prototype, a display piece, or a custom design, Made to Layer helps turn your digital model into a physical object.</p>
     <p>Our goal is to make the 3D printing process easy to understand. Instead of worrying about complicated printing settings, customers can select the options they need and get an instant quote before placing an order.</p>
+    <button onclick="getLocation()">See How Close You Are</button>
+    <p id="location-message"></p>
   </main>
 
   <footer>
     <p>&copy; 2026 Made to Layer.</p>
     <p><a href="style-tile.html">View this project's style tile</a></p>
   </footer>
+  
+  <script>
+    function getLocation() {
+      navigator.geolocation.getCurrentPosition(showPosition, showError);
+    }
+
+    function showPosition(position) {
+      var lat = position.coords.latitude.toFixed(1);
+      var lon = position.coords.longitude.toFixed(1);
+  
+      if (lat >= 24.5 && lat <= 49.5 && lon >= -125 && lon <= -66) {
+        document.getElementById("location-message").textContent =
+          "You're in the USA! You're near " + lat + ", " + lon + ". which means shipping costs might be less, because we are based in the USA";
+      } else {
+        document.getElementById("location-message").textContent =
+          "You're outside the USA! You're near " + lat + ", " + lon + ". which means shipping costs might be more, because we are based the USA";
+      }
+    }
+  
+    function showError(error) {
+      document.getElementById("location-message").textContent =
+        "We couldn't get your location, but you can still browse the rest of the site.";
+    }
+  </script>
 
 </body>
 </html>
