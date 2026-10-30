@@ -20,6 +20,18 @@ nav a[aria-current="page"] {
   text-decoration: underline;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  nav {
+    flex-direction: row;
+  }
+}
+
 .skip-link {
   position: absolute;
   top: -40px;
