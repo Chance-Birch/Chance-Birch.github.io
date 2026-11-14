@@ -111,7 +111,7 @@ footer {
 
 .swatch-primary { background-color: #3d2f4a; }
 .swatch-neutral { background-color: #222222; }
-.swatch-accent { background-color: #548378; }
+.swatch-accent { background-color: #316156; }
 .swatch-cta { background-color: #2f4a45; }
 
 .type-sample-h1 { font-size: 2.5rem; }
@@ -155,7 +155,7 @@ input, textarea {
 button[type="submit"] {
   display: block;
   margin-top: 2rem;
-  background-color: #548378;
+  background-color: #316156;
   color: #ffffff;
   font-size: 1.25rem;
   padding: 16px 32px;
